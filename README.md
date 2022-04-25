@@ -16,34 +16,43 @@ ls - se usa para ver el contenido de un directorio
   ls -R lista todos los archivos en los subdirectorios
   ls -a muestra los archivos ocultos
   ls -al lista los archivos y directorios con información detallada como los permisos, tamaño, proprietario, etc.
-  Ej: ls -d Podemos listar los directorios con el parámetro -d.
+ Ej: ls -d Podemos listar los directorios con el parámetro -d.
   
 cat (nombre del archivo) - crea un nuevo archivo.
 Ej: cat tarea.txt Crea un archivo llamado tarea con extensión .txt
 
 cp - copia los archivos del directorio actual a un directorio diferente.
-  Ejemplo: cp tarea.jpg /home/tareas
+ Ej: cp tarea.jpg /home/tareas
   
 mv - Se usa para mover archivos o  cambiar el nombre de los archivos
-  Ejemplo: mv casa.jpg /home/casas
+ Ej: mv casa.jpg /home/casas
            mv casa.jpg casa2.jpg Se movió el archivo a la ruta /home/casas pero con el nombre casa2.jpg
            
 mkdir - crea un nuevo directorio
-  Ejemplo: mkdir Ulacit Se creó el directorio Ulacit 
+ Ej: mkdir Ulacit Se creó el directorio Ulacit 
   
 rm - se usa para elminar directorios y el contenido dentro de ellos
   rm -r elmina el directorio
+ Ej rm taras.txt Elimina el directorio tareas.txt
   
 touch - permite crear un nuevo archivo en blanco.
-  Ejemplo: touch archivo1
+ Ej: touch tarea Crea el archivo en blanco tarea
   
 sudo - permite realizar tareas que requieren permisos administrativos o raíz
+Ej: sudo find / -type f -name "iphone.ovpn" Busca entre los directorios el archivo iphone.ovpn
 
 top - mostrará una lista de los procesos en ejecución y la cantidad de CPU que utiliza cada proceso
+Ej top -u usuario Verifica los procesos que pertenecen al usuario
 
 history - lista los comandos que ingresados anteriormente
+Ej History 
+lsb_release
+clear
+ip addr
+mkdir Muestra los ultimos comandos utilizados. 
 
 clear - utilizado para limpiar la línea de comandos
+Ej: Clear
 
 htop - usado para monitorear los recursos vitales del sistema o los procesos en tiempo real.
 
@@ -72,3 +81,8 @@ uname - imprimirá información detallada sobre el sistema Linux, como el nombre
 man - muestra el manual de un comando.
 
 echo - permite mover algunos datos a un archivo
+
+ip address - muestra la ip utilizada en el momento, ademas de informacion de red
+
+nano - Se utiliza para crear o editar scripts en Linux
+  Ej: nano openvpn-install.sh Verifica el codigo de script del archivo openvpn-install.sh 
