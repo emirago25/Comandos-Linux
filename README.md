@@ -56,27 +56,47 @@ Ej: Clear
 
 htop - usado para monitorear los recursos vitales del sistema o los procesos en tiempo real.
 
-su - se usa para obtener permisos de root para operaciones administrativas.
+su - Linux nos solicitará la contraseña y accederemos directamente a dicha cuenta.
+Ej: su Emmanuel Se accede a la cuenta Emmanuel, luego de ingresar la contraseña
 
-stat -  muestra información detallada sobre archivos o sistemas de archivos determinados
+stat -  muestra información detallada sobre archivos o sistemas de archivos determinados. 
+Ej: stat foto1.txt
+Fichero: el nombre del archivo.
+Tamaño: el tamaño del archivo en bytes.
+Bloques: la cantidad de bloques asignados que toma el archivo.
+Bloque E/S: el tamaño en bytes de cada bloque.
+Tipo de archivo: archivo regular, directorio, enlace simbólico …
+Dispositivo: número de dispositivo en hexadecimal y decimal.
+Inode: número de inode.
+Enlaces: número de enlaces físicos.
+Acceso: permisos de archivo en los métodos numérico y simbólico.
+Uid: ID de usuario y nombre del propietario.
+Gid: ID de grupo y nombre del propietario.
+Acceso: la última vez que se accedió al archivo.
+Modificación: la última vez que se modificó el contenido del archivo.
+Cambio: la última vez que se modificó el atributo o el contenido del archivo.
 
-file - permite detectar el tipo y formato de un archivo
+file - permite detectar el tipo y formato de un archivo. 
+  Ej: file *.txt Busca todos los archivos .txt
 
 chown - Es una abreviatura del 'Change owner',se utiliza en los sistemas operativos Unix y Unix-like para cambiar el propietario de archivos del sistema de archivos, directorios
+  Ej: chown root /var/home/musica.mp3 Establece como propietario del archivo musica.mp3 al usuario root
 
 chmod - permite cambiar o transferir la propiedad de un archivo al nombre de usuario especificado
+  Ej: chmod 644 file.js[/code] Establece los permisos de file.js en el propietario puede leer y escribir, el grupo solo puede leer y otros solo pueden leer.
 
-df - es muy útil cuando necesitamos ver el espacio de disco disponible en cada una de las particiones de su sistema.
+df - Sirve para ver el espacio de disco disponible en cada una de las particiones de su sistema.
 
-kill -9 - si se tiene un programa que no responde, se puede cerrar manualmente utilizando el comando kill
+kill -9 - si se tiene un programa que no responde, se puede cerrar manualmente utilizando el comando kill.
 
 ps -  es un comando que permite visualizar el estado de un Proceso.
 
 du - permite verificar cuánto espacio ocupa un archivo o un directorio.
 
-ping - verifica el estado de conectividad a un servidor.
+ping - verifica el estado de conectividad a un servidor o computadora.
+Ej: ping 192.168.2.5 Se hará una comunicacion entre nuestra computadora y el dispositivo con la ip 192.168.2.5
 
-uname - imprimirá información detallada sobre el sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc.
+uname - Sirve para imprimir información detallada sobre el sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc.
 
 man - muestra el manual de un comando.
 
