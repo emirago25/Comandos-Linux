@@ -2,28 +2,34 @@
 Este es un repositorio de comandos de Linux del curso Sistemas Operativos
 
 pwd - muestra la ruta del directorio de trabajo actual.
+  Ej: 
+pwd
+pwd {--help, --version 
 
 cd:
   cd .. - sirve para ir un directorio hacia atrás
-  cd (nombre de la carpeta/ruta) - sirve para ir directamente a la carpeta o ruta en específico
+  cd (nombre de la carpeta/ruta) - sirve para ir directamente a la carpeta o ruta en específica
   cd - sirve para ir directamente a la carpeta de inicio.
+ Ej: cd temp\fotos Abre el directorio temp\fotos
   
 ls - se usa para ver el contenido de un directorio
-  ls -R listará todos los archivos en los subdirectorios
-  ls -a mostrará los archivos ocultos
-  ls -al listará los archivos y directorios con información detallada como los permisos, tamaño, proprietario, etc.
+  ls -R lista todos los archivos en los subdirectorios
+  ls -a muestra los archivos ocultos
+  ls -al lista los archivos y directorios con información detallada como los permisos, tamaño, proprietario, etc.
+  Ej: ls -d Podemos listar los directorios con el parámetro -d.
   
-cat (nombre del archivo) - crea un nuevo archivo
+cat (nombre del archivo) - crea un nuevo archivo.
+Ej: cat tarea.txt Crea un archivo llamado tarea con extensión .txt
 
 cp - copia los archivos del directorio actual a un directorio diferente.
-  Ejemplo: cp imagen.jpg /home/folder1
+  Ejemplo: cp tarea.jpg /home/tareas
   
-mv - su uso principal es mover archivos o  cambiar el nombre de los archivos
-  Ejemplo: mv imagen.jpg /home/folder2
-           mv nombreviejo.ext nombrenuevo.ext
+mv - Se usa para mover archivos o  cambiar el nombre de los archivos
+  Ejemplo: mv casa.jpg /home/casas
+           mv casa.jpg casa2.jpg Se movió el archivo a la ruta /home/casas pero con el nombre casa2.jpg
            
 mkdir - crea un nuevo directorio
-  Ejemplo: mkdir musica
+  Ejemplo: mkdir Ulacit Se creó el directorio Ulacit 
   
 rm - se usa para elminar directorios y el contenido dentro de ellos
   rm -r elmina el directorio
